@@ -1,8 +1,40 @@
 const Discord = require("discord.js")
 const client = new Discord.Client({ intents: 32767 });
+require('dotenv').config()
 
 client.on("ready", () => {
-    console.log("Bot is online!")
+    console.log("Bot is online!");
+
+    client.guilds.cache.get("713505802748428309").commands.create({
+        name: "ping",
+        description: "LMAOOO",
+        options: [
+            {
+                name: "dashy",
+                description: "Put a dashy here",
+                required: true,
+                type: Discord.Constants.ApplicationCommandOptionTypes.STRING
+            },
+            {
+                name: "washy",
+                description: "Put a washy here",
+                required: true,
+                type: Discord.Constants.ApplicationCommandOptionTypes.NUMBER
+            }
+        ]
+    })
+})
+
+client.on("interactionCreate", async interaction => {
+    if (interaction.commandName === "ping") {
+        const dashy = interaction.options.getString("dashy");
+        const washy = interaction.options.getNumber("washy");
+
+        interaction.reply({
+            content: `Ok u said ${dashy} and ${washy}`,
+            ephemeral: true
+        })
+    }
 })
 
 client.on("messageCreate", (message) => {
@@ -37,11 +69,9 @@ client.on("messageCreate", (message) => {
 
         let reason = args.slice(1).join(" ") || "No reason"
 
-        member.ban({ reason:reason })
+        member.ban({ reason: reason })
         message.channel.send(`${member} just got banned.\nReason: ${reason}`)
     }
-
-
 })
 
-client.login("-")
+client.login(process.env.TOKEN)

@@ -10,7 +10,7 @@
 
 - Then, the list of branches will show up for each episode labeled:<br>
 
-![image](https://user-images.githubusercontent.com/59381835/145103527-63c85472-5ffd-484b-80af-d0979e65c35e.png)
+![image](https://user-images.githubusercontent.com/59381835/160223529-b254164f-2043-4b87-bd12-2784eea6417a.png)
 
 
 <div align="center">

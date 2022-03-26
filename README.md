@@ -6,7 +6,7 @@
 
 - First, You'll have to click on this button:
 
-![image](https://user-images.githubusercontent.com/59381835/145103628-90d502e9-b484-4a7d-889d-9ccf159d243d.png)
+![image](https://user-images.githubusercontent.com/59381835/160223625-140de22e-5e80-43b6-aa52-d20948553554.png)
 
 - Then, the list of branches will show up for each episode labeled:<br>
 

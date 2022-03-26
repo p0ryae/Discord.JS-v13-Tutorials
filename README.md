@@ -1,7 +1,5 @@
 # Discord.JS-v13-Tutorials
 
-### Official Repository of Discord.JS Coding Tutorials v13 by DashCruft on YouTube!
-
 **[HERE](https://www.youtube.com/watch?v=F5KpcwtBk1E&list=PLCgC6Lz08u0zIRZJFeBLXaW9esQ-VJ8a7)** is where you can watch the videos in the playlist, on YouTube.
 
 ## Where am I suppose to see the SourceCode for each episode?
